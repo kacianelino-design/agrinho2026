@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Sonic Eco - Sistema de Corações</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="start-screen">
+        <h1 id="start-title">vamos ajudar o sonic salvar o mundo?</h1>
+        <p style="color: #fff; margin-bottom: 20px; font-size: 14px;">Controles: A/D ou Setas para andar. ESPAÇO, W ou Seta para Cima para PULAR e pisar nas tartarugas!</p>
+        <button id="btn-start">Iniciar</button>
+    </div>
+
+    <div id="win-screen" style="display: none;">
+        <h1 id="win-title">🏁 LINHA DE CHEGADA! 🏁</h1>
+        <p id="win-rewards">Você ganhou +100 XP e subiu de nível!</p>
+        <button id="btn-restart">Jogar De Novo</button>
+    </div>
+
+    <div id="game-over-screen" style="display: none;">
+        <h1 id="over-title">💀 GAME OVER 💀</h1>
+        <p style="color: #fff; margin-bottom: 20px;">O Sonic ficou sem corações!</p>
+        <button id="btn-over-restart">Tentar De Novo</button>
+    </div>
+
+    <div id="game-ui" style="display: none;">
+        <div class="stat-row" style="color: #ff4757; font-size: 20px; margin-bottom: 5px;">VIDAS <span id="health-val">❤️❤️❤️❤️❤️</span></div>
+        <div class="stat-row">LIXO <span id="trash-val">00</span></div>
+        <div class="stat-row">NÍVEL <span id="level-val">1</span></div>
+        <div class="stat-row">MOEDAS <span id="coin-val">0</span></div>
+        <div class="stat-row">SCORE <span id="score-val">0</span></div>
+    </div>
+    
+    <canvas id="gameCanvas" style="display: none;"></canvas>
+
+    <div id="shop-container" style="display: none;">
+        <h3>🔼 LOJA DE MELHORIAS</h3>
+        <button id="btn-speed">⚡ ⬆️ +Velocidade (Custo: <span id="speed-cost">30</span> Moedas)</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
